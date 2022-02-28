@@ -76,32 +76,6 @@ header {
     font-size: 15px;
 }
 
-#icon-menu {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    right: 20px;
-    top: 16px;
-    font-size: 20px;
-    background-color: rgb(228, 228, 228);
-    border-radius: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    display: none;
-    :hover {
-        opacity: 0.8;
-    }
-
-}
-
-
-#btn-menu{
-    display: none;
-}
-
 /*portada*/
 
 .contenedor-cover {
@@ -593,5 +567,5 @@ header {
     padding: 20px 0;
 }
 
-/*mediaqueria*/
+/*menu des*/
  
