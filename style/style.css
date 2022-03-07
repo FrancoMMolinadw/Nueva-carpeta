@@ -114,6 +114,7 @@ header {
     background-repeat: no-repeat;
     box-shadow: 0 20px 25px -22px rgb(82, 82, 82);
     align-items: center;
+    background-attachment:fixed ;
 }
 
 .contenedor-info {
@@ -127,6 +128,7 @@ header {
     align-items: center;
     color: rgb(255, 247, 247);
     font-size: 30px;
+    
 }
 
 .boton1 {
@@ -585,4 +587,83 @@ header {
     font-size: 24px;
     padding: 20px 0;
 }
+/*responsive*/
 
+.icon__menu{
+     font-size: 26px;
+     color: rgb(61, 61, 61);
+     cursor: pointer;
+     width: 26px;
+     height: 100%;
+     align-items: center;
+     display: flex;
+}
+
+
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+    
+}
+#check__menu{
+    display: none;
+}
+
+
+@media (max-width: 1030px) { 
+
+    .header-content,
+    .contenedor-footer footer {
+        max-width: 900px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .noticias{
+       display: flex;
+       align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    
+    .contenedor-contenido {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .contenedor-aside {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 992px) {
+      nav ul {
+        flex-direction: column;
+        background-color: white;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #label__check{
+        display: block;
+    }
+    .icon__menu{
+        display: flex;
+        
+    }
+    #check__menu:checked ~ nav ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+    }
