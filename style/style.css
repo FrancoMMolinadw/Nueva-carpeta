@@ -114,7 +114,7 @@ header {
     background-repeat: no-repeat;
     box-shadow: 0 20px 25px -22px rgb(82, 82, 82);
     align-items: center;
-    background-attachment:fixed ;
+    
 }
 
 .contenedor-info {
@@ -665,5 +665,9 @@ header {
         height: 300px;
         visibility: visible;
         opacity: 1;
+    }
+    .contenedor{
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
     }
