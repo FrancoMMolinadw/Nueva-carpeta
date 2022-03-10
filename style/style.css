@@ -108,7 +108,7 @@ header {
 .contenedor-cover {
     width: 100%;
     height: 400px;
-    position: relative;
+    position:sticky;
     margin-top: 90px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -618,6 +618,7 @@ header {
         max-width: 900px;
         padding: 0 20px;
     }
+    
 }
 
 @media (max-width: 1020px) {
